@@ -21,3 +21,20 @@ This code performs noise cancellation on an audio file using noisereduce, runs t
 
 - generate_therapist_response() - Generates a therapist-like response to the classified conversation using GPT-3.
 
+## Usage
+Load audio and sample rate
+Reduce noise using noisereduce
+Save denoised audio to file
+Run Whisper transcription on audio file
+Classify transcript text using classify_conversation()
+Generate therapist response using transcript and classification
+Save classification and response to file
+
+## So in summary:
+
+Denoise audio
+Transcribe with Whisper
+Classify transcript with GPT-3
+Generate response with GPT-3
+Save results
+This gives a full pipeline from noisy audio to classified/generated text output.
